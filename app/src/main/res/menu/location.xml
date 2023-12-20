@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/saigon"
+        android:title="Sài Gòn"/>
+    <item
+        android:id="@+id/hanoi"
+        android:title="Hà Nội" />
+
+    <item
+        android:id="@+id/danang"
+        android:title="Đà Nẵng" />
+
+    <item
+        android:id="@+id/nhatrang"
+        android:title="Nha Trang"/>
+
+    <item
+        android:id="@+id/hue"
+        android:title="Huế"/>
+
+    <item
+        android:id="@+id/quangngai"
+        android:title="Quảng Ngãi"/>
+</menu>

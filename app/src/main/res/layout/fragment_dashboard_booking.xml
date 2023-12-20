@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard_booking"
+    android:orientation="vertical">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="@drawable/gradiantblue"
+       android:gravity="center">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Train Ticket"
+           android:fontFamily="@font/bungee"
+           android:textSize="26sp"
+           android:textColor="@color/white"/>
+   </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/whitedencecardboard"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/fromlocate"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:fontFamily="@font/montserrat"
+
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/fromtext"
+            />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/sourceicon"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/fromtext"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/fromlocate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/sourceicon"
+            android:layout_alignBottom="@+id/sourceicon"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@id/sourceicon"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/montserrat"
+            android:hint="Choose location"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/montserrat"
+            android:layout_below="@id/sourceicon"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/totext"
+            />
+
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/destinationicon"
+            android:layout_below="@id/totext"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/destination" />
+
+        <TextView
+            android:id="@+id/tolocate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/destinationicon"
+            android:layout_alignBottom="@+id/destinationicon"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@id/sourceicon"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/montserrat"
+            android:hint="Choose Location"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/whitedencecardboard"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Journey date"
+            android:fontFamily="@font/montserrat"
+            android:id="@+id/journeydatetext"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"/>
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/calendar"
+            android:id="@+id/calendaricon"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/journeydatetext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setdatedate"
+            android:text="19"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+
+            android:fontFamily="@font/montserrat"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/calendaricon"
+            android:layout_alignTop="@id/calendaricon"
+            android:layout_alignBottom="@id/calendaricon"
+            />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toEndOf="@id/setdatedate"
+          android:layout_alignTop="@id/setdatedate"
+          android:layout_alignBottom="@id/setdatedate"
+          android:layout_marginStart="5dp"
+          android:text="Tue,\nAug"
+          android:fontFamily="@font/montserrat"
+          android:textSize="10dp"
+          android:id="@+id/day_year"
+          android:textColor="@color/black"
+          />
+
+
+    </RelativeLayout>
+
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/bungee"
+    android:background="@drawable/curvegradiantblue"
+    android:textColor="@color/white"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:id="@+id/serchbtn"
+    android:textSize="18sp"
+    android:text="Serch"/>
+
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
