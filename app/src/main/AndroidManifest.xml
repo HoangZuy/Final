@@ -20,6 +20,8 @@
         <activity android:name=".bookedsuccesfully" />
         <activity android:name=".Confirmticket" />
         <activity android:name=".Signup" />
+
+        <activity android:name=".ChooseTrain"/>
         <activity android:name=".Login"
             android:exported="true">
             <intent-filter>
